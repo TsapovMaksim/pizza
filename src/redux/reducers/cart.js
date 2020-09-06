@@ -32,7 +32,6 @@ const cart = (state = initialState, action) => {
         [action.payload.id]: {
           items: currentPizzaItems,
           totalPrice: getTotalPrice(currentPizzaItems),
-          totalCount: currentPizzaItems.length,
         },
       };
 
@@ -72,7 +71,6 @@ const cart = (state = initialState, action) => {
         [action.payload]: {
           items: newObjItems,
           totalPrice: getTotalPrice(newObjItems),
-          totalCount: newObjItems.length,
         },
       };
 
@@ -96,7 +94,6 @@ const cart = (state = initialState, action) => {
         [action.payload]: {
           items: newObjItems,
           totalPrice: getTotalPrice(newObjItems),
-          totalCount: newObjItems.length,
         },
       };
 
